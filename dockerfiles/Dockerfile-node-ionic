@@ -1,0 +1,3 @@
+FROM codenvy/node
+
+RUN sudo npm install -g cordova ionic

@@ -8,6 +8,8 @@
 
 FROM codenvy/ubuntu_jre
 
+ENV NODE_PATH=/usr/local/lib/node_modules 
+
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
     sudo apt-get update && \
     sudo apt-get -y install nodejs build-essential libssl-dev libkrb5-dev gcc make ruby-full rubygems-integration python && \

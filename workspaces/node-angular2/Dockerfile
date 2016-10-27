@@ -8,9 +8,6 @@
 
 FROM codenvy/ubuntu_jre
 
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
     sudo apt-get update && \
     sudo apt-get -y install nodejs build-essential libssl-dev libkrb5-dev gcc make ruby-full rubygems-integration python && \
